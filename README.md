@@ -1,1 +1,4 @@
-This is just a test
+GitHub Branch Testing
+=====================
+
+Name: Feature B
