@@ -1,5 +1,2 @@
-GitHub Branch Project
-=====================
-
-Name: Feature A
-Author: Kris
+Superblocks Project Synced w/ GitHub
+=================================
