@@ -1,5 +1,4 @@
-# Superblocks Project Synced w/ GitHub
-
+# Google App Engine App
 Author: Kris N Harbold
 
-This project contains my toy apps built in Superblocks.
+This project contains a toy Google App Engine application for test purposes.
