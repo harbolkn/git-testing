@@ -1,5 +1,5 @@
 # Superblocks Project Synced w/ GitHub
 
-Author: Kristof Harbold
+Author: Kris Harbold
 
 This project contains my toy apps built in Superblocks.
