@@ -1,0 +1,12 @@
+{
+  "configType": "ROOT",
+  "metadata": {
+    "cliVersion": "0.0.22"
+  },
+  "resources": {
+    "2d92b404-4515-411a-98a3-806e4602e9f3": {
+      "location": "apps/kris's_great_app",
+      "resourceType": "APPLICATION"
+    }
+  }
+}
