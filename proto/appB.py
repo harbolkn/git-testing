@@ -1,5 +1,5 @@
 import csv
-import sys
+import argparse
 
 def read_csv(filepath):
     with open(filepath, 'r') as file:
@@ -7,9 +7,10 @@ def read_csv(filepath):
         data = list(reader)
     return data
 
-if len(sys.argv) > 1:
-    filename = sys.argv[1]
-    result = read_csv(filename)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("filename", help="CSV file to read")
+    args = parser.parse_args()
+
+    result = read_csv(args.filename)
     print(result)
-else:
-    print("Please provide a filename as a system argument.")
