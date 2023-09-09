@@ -1,0 +1,12 @@
+{
+  "configType": "ROOT",
+  "metadata": {
+    "cliVersion": "0.0.22"
+  },
+  "resources": {
+    "583a1aec-16f8-45de-83ee-e994a030c76f": {
+      "location": "apps/kris's_stunning_app",
+      "resourceType": "APPLICATION"
+    }
+  }
+}

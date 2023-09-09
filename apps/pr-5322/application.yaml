@@ -1,0 +1,40 @@
+created: 2023-08-29T19:59:11.245Z
+creator:
+  id: f615949b-4587-4493-aeba-772b035baa14
+  name: Kris Harbold
+deletedAt: null
+deployedAt: null
+deployedCommitId: null
+folderId: null
+id: 583a1aec-16f8-45de-83ee-e994a030c76f
+isDeployed: false
+isEditable: true
+isPublic: false
+name: Kris's Stunning App
+organizationId: 22c87314-fc6e-4961-97dd-21e186a58ef7
+pages:
+  - id: febebae3-7b58-497a-b383-396726be9b8b
+    isDefault: true
+settings:
+  profiles:
+    deployed:
+      availableProfileIds:
+        - c023f478-2ce2-41e8-8e8d-bfd178b0eb18
+        - 08842023-5a1a-4a93-8e94-1b8433ddf87e
+      defaultProfileId: c023f478-2ce2-41e8-8e8d-bfd178b0eb18
+    editor:
+      availableProfileIds:
+        - c023f478-2ce2-41e8-8e8d-bfd178b0eb18
+        - 08842023-5a1a-4a93-8e94-1b8433ddf87e
+      defaultProfileId: 08842023-5a1a-4a93-8e94-1b8433ddf87e
+    preview:
+      availableProfileIds:
+        - c023f478-2ce2-41e8-8e8d-bfd178b0eb18
+        - 08842023-5a1a-4a93-8e94-1b8433ddf87e
+      defaultProfileId: 08842023-5a1a-4a93-8e94-1b8433ddf87e
+updated: 2023-08-29T19:59:31.574Z
+userPermissions:
+  - manage:applications
+  - read:applications
+  - publish:applications
+  - makePublic:applications
