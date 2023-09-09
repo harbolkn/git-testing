@@ -1,5 +1,4 @@
 import csv
-import argparse
 
 def read_csv(filepath):
     with open(filepath, 'r') as file:
@@ -7,10 +6,7 @@ def read_csv(filepath):
         data = list(reader)
     return data
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("filename", help="CSV file to read")
-    args = parser.parse_args()
-
-    result = read_csv(args.filename)
-    print(result)
+def write_csv(filepath, data):
+    with open(filepath, 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(data)
