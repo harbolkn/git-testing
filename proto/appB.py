@@ -1,4 +1,5 @@
 import csv
+import sys
 
 def read_csv(filepath):
     with open(filepath, 'r') as file:
@@ -6,4 +7,9 @@ def read_csv(filepath):
         data = list(reader)
     return data
 
-return read_csv('input.csv')
+if len(sys.argv) > 1:
+    filename = sys.argv[1]
+    result = read_csv(filename)
+    print(result)
+else:
+    print("Please provide a filename as a system argument.")
