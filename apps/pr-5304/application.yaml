@@ -1,0 +1,40 @@
+created: 2023-08-29T19:50:06.157Z
+creator:
+  id: e9e5b66c-56f4-4072-bd78-3cc71a906b03
+  name: Kris Harbold
+deletedAt: null
+deployedAt: null
+deployedCommitId: null
+folderId: null
+id: 2d92b404-4515-411a-98a3-806e4602e9f3
+isDeployed: false
+isEditable: true
+isPublic: false
+name: Kris's Great App
+organizationId: 5537f077-c3ac-4e05-a7e7-c2d424d18838
+pages:
+  - id: 72739324-6796-4ebc-afad-ea98932e130e
+    isDefault: true
+settings:
+  profiles:
+    deployed:
+      availableProfileIds:
+        - 5ed3259c-f4c0-4176-91e4-a46ae08cfe25
+        - 6485ddba-561b-4742-8111-fe68afc6b726
+      defaultProfileId: 5ed3259c-f4c0-4176-91e4-a46ae08cfe25
+    editor:
+      availableProfileIds:
+        - 5ed3259c-f4c0-4176-91e4-a46ae08cfe25
+        - 6485ddba-561b-4742-8111-fe68afc6b726
+      defaultProfileId: 6485ddba-561b-4742-8111-fe68afc6b726
+    preview:
+      availableProfileIds:
+        - 5ed3259c-f4c0-4176-91e4-a46ae08cfe25
+        - 6485ddba-561b-4742-8111-fe68afc6b726
+      defaultProfileId: 6485ddba-561b-4742-8111-fe68afc6b726
+updated: 2023-08-29T19:50:17.256Z
+userPermissions:
+  - manage:applications
+  - read:applications
+  - publish:applications
+  - makePublic:applications

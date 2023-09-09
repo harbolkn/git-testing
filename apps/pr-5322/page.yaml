@@ -1,0 +1,304 @@
+applicationId: 583a1aec-16f8-45de-83ee-e994a030c76f
+id: febebae3-7b58-497a-b383-396726be9b8b
+isHidden: false
+layouts:
+  - actionUpdates: []
+    dsl:
+      backgroundColor: none
+      bottomRow: 107
+      cachedData:
+        apiDeps: {}
+        apiNames: []
+        pageLoadActions:
+          apiDeps: {}
+          apiNames: []
+      canExtend: true
+      children:
+        - animateLoading: true
+          bottomRow: 51
+          cachedColumnSettings: {}
+          columnOrder:
+            - photo
+            - name
+            - twitter
+            - date_joined
+            - email
+            - action
+          compactMode: SHORT
+          defaultFilters: "{}"
+          defaultSelectedRow: "0"
+          derivedColumns: {}
+          dynamicBindingPathList:
+            - key: primaryColumns.name.linkUrl
+            - key: primaryColumns.name.linkLabel
+            - key: primaryColumns.name.computedValue
+            - key: primaryColumns.name.displayedValue
+            - key: primaryColumns.twitter.computedValue
+            - key: primaryColumns.twitter.linkUrl
+            - key: primaryColumns.twitter.linkLabel
+            - key: primaryColumns.date_joined.computedValue
+            - key: primaryColumns.date_joined.linkUrl
+            - key: primaryColumns.date_joined.linkLabel
+            - key: primaryColumns.photo.computedValue
+            - key: primaryColumns.photo.linkUrl
+            - key: primaryColumns.photo.linkLabel
+            - key: primaryColumns.photo.displayedValue
+            - key: primaryColumns.email.computedValue
+            - key: primaryColumns.email.linkUrl
+            - key: primaryColumns.email.linkLabel
+            - key: primaryColumns.email.displayedValue
+            - key: primaryColumns.action.computedValue
+            - key: primaryColumns.action.linkUrl
+            - key: primaryColumns.action.linkLabel
+            - key: primaryColumns.action.buttonLabel
+            - key: primaryColumns.action.displayedValue
+          dynamicTriggerPathList:
+            - key: primaryColumns.action.onClick
+            - key: onRowClicked
+            - key: onSaveChanges
+            - key: onCancelChanges
+          horizontalAlignment: LEFT
+          isDownloadable: true
+          isFilterable: true
+          isLoading: false
+          isSearchable: true
+          isVisible: true
+          label: Data
+          leftColumn: 0
+          onCancelChanges:
+            - id: cty5az6385
+              newWindow: true
+          onRowClicked:
+            - id: 39h0h2i3vg
+              newWindow: true
+          onSaveChanges:
+            - id: x88744q8s6
+              newWindow: true
+          pageType: NONE
+          parentId: "0"
+          primaryColumns:
+            action:
+              buttonLabel: Approve
+              buttonStyle: "#27BBFF"
+              columnType: button
+              computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.action })}}"
+              enableFilter: true
+              enableSort: true
+              horizontalAlignment: LEFT
+              id: action
+              index: 5
+              isDerived: false
+              isEditableOnInsertion: true
+              isVisible: true
+              label: action
+              linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.action })}}"
+              linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.action })}}"
+              onClick:
+                - code: showAlert(currentRow.name + ' is approved!', 'success')
+                  id: id0
+                  newWindow: true
+                  type: runJs
+              openInNewTab: true
+              textSize: PARAGRAPH
+              verticalAlignment: CENTER
+              width: 150
+            date_joined:
+              columnType: date
+              computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.date_joined })}}"
+              enableFilter: true
+              enableSort: true
+              horizontalAlignment: LEFT
+              id: date_joined
+              index: 2
+              inputFormat: YYYY-MM-DD
+              isDerived: false
+              isEditableOnInsertion: true
+              isVisible: true
+              label: date joined
+              linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.date_joined })}}"
+              linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.date_joined })}}"
+              openInNewTab: true
+              outputFormat: MM-DD-YYYY
+              textSize: PARAGRAPH
+              verticalAlignment: CENTER
+              width: 150
+            email:
+              columnType: text
+              computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.email })}}"
+              enableFilter: true
+              enableSort: true
+              horizontalAlignment: LEFT
+              id: email
+              index: 4
+              isDerived: false
+              isEditableOnInsertion: true
+              isVisible: true
+              label: email
+              linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.email })}}"
+              linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.email })}}"
+              openInNewTab: true
+              textSize: PARAGRAPH
+              verticalAlignment: CENTER
+              width: 150
+            name:
+              columnType: text
+              computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.name })}}"
+              enableFilter: true
+              enableSort: true
+              horizontalAlignment: LEFT
+              id: name
+              index: 0
+              isDerived: false
+              isEditableOnInsertion: true
+              isVisible: true
+              label: name
+              linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.name })}}"
+              linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.name })}}"
+              openInNewTab: true
+              textSize: PARAGRAPH
+              verticalAlignment: CENTER
+              width: 150
+            photo:
+              columnType: image
+              computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.photo })}}"
+              enableFilter: true
+              enableSort: true
+              horizontalAlignment: LEFT
+              id: photo
+              index: 3
+              isDerived: false
+              isEditableOnInsertion: true
+              isVisible: true
+              label: photo
+              linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.photo })}}"
+              linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.photo })}}"
+              openInNewTab: true
+              textSize: PARAGRAPH
+              verticalAlignment: CENTER
+              width: 150
+            twitter:
+              columnType: link
+              computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.twitter })}}"
+              enableFilter: true
+              enableSort: true
+              horizontalAlignment: LEFT
+              id: twitter
+              index: 1
+              isDerived: false
+              isEditableOnInsertion: true
+              isVisible: true
+              label: twitter
+              linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return '@' +
+                currentRow.twitter?.split('/').pop()})}}"
+              linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                currentRow.twitter })}}"
+              openInNewTab: true
+              textSize: PARAGRAPH
+              verticalAlignment: CENTER
+              width: 150
+          rightColumn: 93
+          snapColumns: 93
+          snapRows: 51
+          tableData: >-
+            [
+              {
+                "name": "Billie Eilish",
+                "twitter": "https://twitter.com/billieeilish",
+                "date_joined": "2019-01-06",
+                "photo": "https://lowcode.s3-us-west-2.amazonaws.com/billie_eilish.png",
+                "email": "bad_guy@gmail.com",
+                "action": ""
+              },
+              {
+                "name": "Thom Yorke",
+                "twitter": "https://twitter.com/thomyorke",
+                "date_joined": "2019-01-05",
+                "photo": "https://lowcode.s3-us-west-2.amazonaws.com/thom_yorke.png",
+                "email": "karma_police_thom@hotmail.com",
+                "action": ""
+              },
+              {
+                "name": "Katy Perry",
+                "twitter": "https://twitter.com/katyperry",
+                "date_joined": "2019-01-02",
+                "photo": "https://lowcode.s3-us-west-2.amazonaws.com/katy_perry.png",
+                "email": "katycat@hotmail.com",
+                "action": ""
+              },
+              {
+                "name": "Ryan Gosling",
+                "twitter": "https://twitter.com/RyanGosling",
+                "date_joined": "2019-01-03",
+                "photo": "https://lowcode.s3-us-west-2.amazonaws.com/ryan_gosling.png",
+                "email": "ryan_the_notebook@gmail.com",
+                "action": ""
+              },
+              {
+                "name": "Dua Lipa",
+                "twitter": "https://twitter.com/DUALIPA",
+                "date_joined": "2019-01-07",
+                "photo": "https://lowcode.s3-us-west-2.amazonaws.com/dua_lipa.png",
+                "email": "dua_levitating@yahoo.com",
+                "action": ""
+              },
+              {
+                "name": "Beyonce Knowles",
+                "twitter": "https://twitter.com/Beyonce",
+                "date_joined": "2019-01-09",
+                "photo": "https://lowcode.s3-us-west-2.amazonaws.com/beyonce_knowles.png",
+                "email": "beyonce_run_the_world@hotmail.com",
+                "action": ""
+              },
+              {
+                "name": "Lopez Jennifer",
+                "twitter": "https://twitter.com/JLo",
+                "date_joined": "2019-01-04",
+                "photo": "https://lowcode.s3-us-west-2.amazonaws.com/jennifer_lopez.png",
+                "email": "jenny_from_the_block@yahoo.com",
+                "action": ""
+              }
+            ]
+          tableHeader: Users
+          textSize: PARAGRAPH
+          topRow: 0
+          type: TABLE_WIDGET
+          verticalAlignment: CENTER
+          widgetId: u17hkq56wg
+          widgetLastChange: 2023-08-29T19:59:31.331Z
+          widgetName: Table1
+      containerStyle: none
+      detachFromLayout: true
+      dynamicBindingPathList: []
+      dynamicTriggerPathList: []
+      minHeight: 1292
+      snapColumns: 96
+      snapRows: 99
+      topRow: 0
+      type: CANVAS_WIDGET
+      version: 6
+      widgetId: "0"
+      widgetLastChange: 2023-08-29T19:59:28.502Z
+      widgetName: MainContainer
+    id: e55c888f-27a6-4dc2-b9d0-d08c10764d32
+    layoutOnLoadActions: []
+    messages: []
+    updated: 2023-08-29T19:59:31.574Z
+    userPermissions: []
+name: Page1
+updated: 2023-08-29T19:59:31.574Z
