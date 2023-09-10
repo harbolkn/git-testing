@@ -1,5 +1,6 @@
 import csv
 
+
 def read_csv(filepath):
     """
     Read data from a CSV file.
@@ -15,6 +16,7 @@ def read_csv(filepath):
         data = list(reader)
     return data
 
+
 def write_csv(filepath, data):
     """
     Write data to a CSV file.
@@ -27,7 +29,7 @@ def write_csv(filepath, data):
         None
     """
     with open(filepath, mode='w', newline='') as csv_file:
-        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        writer = csv.DictWriter(csv_file, fieldnames=data[0].keys())
 
         # Write the header row with field names
         writer.writeheader()
